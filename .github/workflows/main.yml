@@ -34,6 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          git config --global user.email "ehom@acm.org"
+          git config --global user.name "ehom"
           git pull
           curl "https://spreadsheets.google.com/feeds/cells/${{secrets.DOC_ID}}/1/public/full?alt=json" -o movies.json
           cat movies.json
