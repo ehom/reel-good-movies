@@ -34,5 +34,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          curl "https://spreadsheets.google.com/feeds/cells/${{secrets.DOC_ID}}/1/public/full?alt=json" -o movies.json
+          curl "https://spreadsheets.google.com/feeds/cells/18H5lQFI4mRuqt-7_EVecuc_wWXElEkd0m-4izsbiKDA/1/public/full?alt=json" -o movies.json
           cat movies.json
