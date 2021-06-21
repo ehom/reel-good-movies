@@ -34,5 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          git pull
           curl "https://spreadsheets.google.com/feeds/cells/${{secrets.DOC_ID}}/1/public/full?alt=json" -o movies.json
           cat movies.json
+          git add movies.json
+          git commit -m "updated"
+          git push
+          echo Done
